@@ -1,4 +1,4 @@
-# Youtube-Playlist-Downloader
+# YouTube-Playlist-Downloader
 Simple script to download YouTube playlists, written in pure PHP
 
 Usage:
