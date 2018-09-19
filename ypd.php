@@ -186,7 +186,7 @@ class YouTubeDownloader {
                 'format' => $format
             );
         }
-        if(!empty($result)) {
+        if(empty($result)) {
             return $this->getDownloadLinks($id);
         }
         $sorted_keys = array_keys($result);
