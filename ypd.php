@@ -164,7 +164,6 @@ class YouTubeDownloader {
             }
         }
         $parts = explode(",", $uefsm);
-            
         foreach($parts as $p) {
             $query = str_replace('\u0026', '&', $p);
             parse_str($query, $arr);
@@ -186,6 +185,9 @@ class YouTubeDownloader {
                 'url' => $url,
                 'format' => $format
             );
+        }
+        if(!empty($result)) {
+            return $this->getDownloadLinks($id);
         }
         $sorted_keys = array_keys($result);
         usort($sorted_keys, function($a, $b) {
